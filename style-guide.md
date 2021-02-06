@@ -1,16 +1,4 @@
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
+/*
 Moderate violet: hsl(263, 55%, 52%)
 Very dark grayish blue: hsl(217, 19%, 35%)
 Very dark blackish blue: hsl(219, 29%, 14%)
@@ -36,3 +24,143 @@ Note for text colors:
 
 - Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
 - Weights: 500, 600
+*/
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/barlowsemicondensed/v6/wlpigxjLBV1hqnzfr-F8sEYMB0Yybp0mudRfi6m_B2sl.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body{
+font-family: 'Barlow Semi Condensed', sans-serif;
+background-color:hsl(210, 46%, 95%);
+Font-size: 13px;
+}
+main{
+
+  padding: 120px;
+}
+
+/************* Creating grid **************/
+.main-grid{
+ 
+  display: grid;
+
+  grid-template-areas: "b1 b1 b1 b2 b3"
+              "b4 b5 b5 b5 b3";
+  
+}
+.box1,.box2,.box3,.box4,.box5{
+  line-height:1.2;
+  word-spacing: .2em;
+  border-radius: 10px;
+  margin:5px;
+}
+
+.box1{
+
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(./images/bg-pattern-quotation.svg) ;
+  background-repeat: no-repeat;
+  background-position:80% 0px ;
+  color: white;
+  
+  padding: 20px;
+  grid-area: b1;
+
+  
+}
+.box2{
+
+  background-color: hsl(217, 19%, 35%);
+  
+  color: white;
+  padding: 30px;
+  grid-area: b2;
+  
+}
+.box3{
+
+  background-color:hsl(0, 0%, 100%);
+
+  color:black;
+  padding: 30px;
+  grid-area: b3;
+  
+}
+.box4{
+
+  background-color: hsl(0, 0%, 100%);
+
+  color: black;
+  padding: 30px;
+  grid-area: b4;
+  
+}
+.box5{
+
+  background-color: hsl(219, 29%, 14%);
+
+  color: white;
+  padding: 30px;
+  grid-area: b5;
+}
+/*********************************/
+/*fromating inside each box */
+.Header{
+  margin-bottom: 20px;
+ display:flex;
+ align-items: center;
+
+
+}
+.grouped{
+ 
+  margin-left: 20px;
+
+}
+.verified{
+  opacity: 50%;
+}
+.para1{
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.2rem;
+ 
+}
+
+.para2{
+  opacity: 70%;
+  text-align: center;
+}
+
+/***********************/
+.pic{
+
+  width:45px;
+
+  border-radius: 100px;
+  border:2px solid  hsl(263, 55%, 52%);
+}
+/******************/
+
+@media only screen and (max-width:600px)
+{
+  .main-grid{
+ 
+    display: grid;
+  
+    grid-template-areas: "b1 " "b2" "b3" "b4" "b5";
+    
+  }
+}
