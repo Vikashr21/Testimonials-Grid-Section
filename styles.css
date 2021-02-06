@@ -48,14 +48,15 @@ Font-size: 13px;
 }
 main{
 
-  padding: 6%;
+  padding: 3%;
 }
 
 /************* Creating grid **************/
 .main-grid{
 
   display: grid;
-
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
   grid-template-areas: "b1 b1 b1 b2 b3"
               "b4 b5 b5 b5 b3";
 
@@ -64,7 +65,7 @@ main{
   line-height:1.2;
   word-spacing: .2em;
   border-radius: 10px;
-  margin:5px;
+
 }
 
 .box1{
@@ -165,7 +166,7 @@ main{
                          "b2 b2 b2"
                          "b4 b4 b4"
                          "b5 b5 b5"
-                         "b3 b3 b3" ;
+                         "b3 b3 b3";
 
   }
 
