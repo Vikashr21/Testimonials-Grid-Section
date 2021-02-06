@@ -55,10 +55,9 @@ main{
 .main-grid{
  
   display: grid;
-  grid-template-columns: repeat(4,25%);
-  grid-template-rows: 50% 50% ;
-  grid-template-areas: "b1 b1 b2 b3"
-              "b4 b5 b5 b3";
+
+  grid-template-areas: "b1 b1 b1 b2 b3"
+              "b4 b5 b5 b5 b3";
   
 }
 .box1,.box2,.box3,.box4,.box5{
@@ -154,3 +153,14 @@ main{
   border:2px solid  hsl(263, 55%, 52%);
 }
 /******************/
+
+@media only screen and (max-width:600px)
+{
+  .main-grid{
+ 
+    display: grid;
+  
+    grid-template-areas: "b1 " "b2" "b3" "b4" "b5";
+    
+  }
+}
