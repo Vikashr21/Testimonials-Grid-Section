@@ -37,7 +37,7 @@ Note for text colors:
 *{
     margin: 0;
     padding: 0;
-    
+
 }
 
 
@@ -53,12 +53,12 @@ main{
 
 /************* Creating grid **************/
 .main-grid{
- 
+
   display: grid;
 
   grid-template-areas: "b1 b1 b1 b2 b3"
               "b4 b5 b5 b5 b3";
-  
+
 }
 .box1,.box2,.box3,.box4,.box5{
   line-height:1.2;
@@ -74,20 +74,20 @@ main{
   background-repeat: no-repeat;
   background-position:80% 0px ;
   color: white;
-  
+
   padding: 20px;
   grid-area: b1;
 
-  
+
 }
 .box2{
 
   background-color: hsl(217, 19%, 35%);
-  
+
   color: white;
   padding: 30px;
   grid-area: b2;
-  
+
 }
 .box3{
 
@@ -96,7 +96,7 @@ main{
   color:black;
   padding: 30px;
   grid-area: b3;
-  
+
 }
 .box4{
 
@@ -105,7 +105,7 @@ main{
   color: black;
   padding: 30px;
   grid-area: b4;
-  
+
 }
 .box5{
 
@@ -125,7 +125,7 @@ main{
 
 }
 .grouped{
- 
+
   margin-left: 20px;
 
 }
@@ -136,7 +136,7 @@ main{
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 1.2rem;
- 
+
 }
 
 .para2{
@@ -157,10 +157,10 @@ main{
 @media only screen and (max-width:600px)
 {
   .main-grid{
- 
+
     display: grid;
-  
-    grid-template-areas: "b1 " "b2" "b3" "b4" "b5";
-    
+
+    grid-template-areas: "b1 b1 b1" "b2 b2 b2" "b3 b3 b3" "b4 b4 b4" "b5 b5 b5";
+
   }
 }
