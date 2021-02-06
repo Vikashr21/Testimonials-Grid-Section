@@ -161,7 +161,11 @@ main{
 
     display: grid;
 
-    grid-template-areas: "b1 b1 b1" "b2 b2 b2" "b3 b3 b3" "b4 b4 b4" "b5 b5 b5";
+    grid-template-areas: "b1 b1 b1"
+                         "b2 b2 b2"
+                         "b4 b4 b4"
+                         "b5 b5 b5"
+                         "b3 b3 b3";
 
   }
 
